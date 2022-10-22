@@ -38,6 +38,7 @@ This project is about practicing layouts with stateless and stateful widgets.
 ## Added
 - Dessert Page with interaction in favorite icon
 - Weather Page (In progress)
+- Contact Page (In progress)
   
 
 ## Reminders
