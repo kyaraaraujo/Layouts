@@ -17,10 +17,16 @@ class WeatherPage extends StatelessWidget {
             text,
             style: const TextStyle(
               color: Colors.grey,
+              fontSize: 11,
             ),
           ),
         ),
-        Text(value),
+        Text(
+          value,
+          style: const TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ],
     );
   }
@@ -111,7 +117,10 @@ class WeatherPage extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: const [
-                Text("Detalhes"),
+                Text(
+                  "Details",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
                 SizedBox(width: 150),
                 Icon(
                   Icons.refresh,
@@ -124,15 +133,20 @@ class WeatherPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               buildWeatherDayDetailsColumn(
-                  '${imageBasePath}icons/Wind.png', 'Vento', '9km/h'),
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 25, vertical: 5),
-                child: buildWeatherDayDetailsColumn(
-                    '${imageBasePath}icons/Drop.png', 'Umidade', '0.9'),
+                '${imageBasePath}icons/Wind.png',
+                'WIND',
+                '9km/h',
               ),
               buildWeatherDayDetailsColumn(
-                  '${imageBasePath}icons/CloudRain.png', 'Chuva', '30%')
+                '${imageBasePath}icons/Drop.png',
+                'HUMIDITY',
+                '0.9',
+              ),
+              buildWeatherDayDetailsColumn(
+                '${imageBasePath}icons/CloudRain.png',
+                'RAINFALL',
+                '30%',
+              )
             ],
           ),
           Padding(
@@ -141,11 +155,18 @@ class WeatherPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 buildWeatherDayDetailsColumn(
-                    '${imageBasePath}icons/SunHorizon.png', 'UV', '3'),
+                  '${imageBasePath}icons/SunHorizon.png',
+                  'UV INDEX',
+                  '3',
+                ),
                 buildWeatherDayDetailsColumn(
-                    '${imageBasePath}icons/Thermometer.png', 'Feeling', '26.5'),
+                    '${imageBasePath}icons/Thermometer.png',
+                    'FEELS LIKE',
+                    '26.5'),
                 buildWeatherDayDetailsColumn(
-                    '${imageBasePath}icons/SunHorizon.png', 'Ozone', '50'),
+                    '${imageBasePath}icons/SunHorizon.png',
+                    'AIR QUALITY',
+                    '50'),
               ],
             ),
           ),
