@@ -64,7 +64,7 @@ TBD
 
 - [Navigation basics](https://docs.flutter.dev/cookbook/navigation/navigation-basics)
 
-
+- [Switch](https://api.flutter.dev/flutter/material/Switch-class.html)
 
 <br>
 

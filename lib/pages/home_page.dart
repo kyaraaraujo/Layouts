@@ -47,7 +47,8 @@ class HomePage extends StatelessWidget {
                 title: Text(pages[index]['label']),
                 leading: Text('${index + 1}'),
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)),
+                  borderRadius: BorderRadius.circular(10),
+                ),
                 onTap: () {
                   Navigator.push(
                       context,

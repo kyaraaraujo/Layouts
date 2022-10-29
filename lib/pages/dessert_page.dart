@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:layouts/widgets/icons_section_widget.dart';
-import 'package:layouts/widgets/dessert/recipe_section_widget.dart';
-import 'package:layouts/widgets/dessert/title_section_widget.dart';
+
+import '../widgets/dessert/recipe_section_widget.dart';
+import '../widgets/dessert/title_section_widget.dart';
+import '../widgets/icons_section_widget.dart';
 
 class DessertPage extends StatelessWidget {
   const DessertPage({Key? key}) : super(key: key);
