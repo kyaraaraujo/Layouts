@@ -51,6 +51,7 @@ TBD
         - [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)
         - [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code)
 - Have a physical smartphone or an emulator (for an Android emulator, can be created in Android Studio or VSCode)
+  - Device used: Pixel 4, API 25
 - Run the app (F5 in VSCode or Run App button in Android Studio)
 
 <br>
@@ -65,6 +66,12 @@ TBD
 - [Navigation basics](https://docs.flutter.dev/cookbook/navigation/navigation-basics)
 
 - [Switch](https://api.flutter.dev/flutter/material/Switch-class.html)
+
+- [Gradiente background color](https://www.digitalocean.com/community/tutorials/flutter-flutter-gradient)
+
+- [Hexadecimal Color and opacity](https://stackoverflow.com/a/61157406/20311040)
+
+- [Solution for: Navigator operation requested with a context that does not include a Navigator](https://stackoverflow.com/questions/44004451/navigator-operation-requested-with-a-context-that-does-not-include-a-navigator)
 
 <br>
 

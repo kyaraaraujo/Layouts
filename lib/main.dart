@@ -2,5 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:layouts/pages/home_page.dart';
 
 void main() {
-  runApp(const HomePage());
+  runApp(
+    MaterialApp(
+      title: 'Layouts for practicing',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme:
+            ColorScheme.fromSwatch().copyWith(primary: Colors.grey[700]),
+      ),
+      home: const HomePage(),
+    ),
+  );
 }

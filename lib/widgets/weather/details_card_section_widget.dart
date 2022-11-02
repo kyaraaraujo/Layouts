@@ -25,7 +25,7 @@ class DetailsCardSectionWidget extends StatelessWidget {
 
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 18, vertical: 9),
-      elevation: 20,
+      elevation: 15,
       color: Colors.white,
       shadowColor: Colors.black,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
@@ -53,7 +53,7 @@ class DetailsCardSectionWidget extends StatelessWidget {
             children: [...?rows['first']],
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 15),
+            padding: const EdgeInsets.symmetric(vertical: 17),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [...?rows['second']],
