@@ -17,7 +17,7 @@ class WeatherDetailsDay extends StatelessWidget {
           width: 20,
         ),
         Padding(
-          padding: const EdgeInsets.all(4.0),
+          padding: const EdgeInsets.all(6.0),
           child: Text(
             text,
             style: const TextStyle(
@@ -30,6 +30,7 @@ class WeatherDetailsDay extends StatelessWidget {
           value,
           style: const TextStyle(
             fontWeight: FontWeight.bold,
+            fontSize: 17,
           ),
         ),
       ],

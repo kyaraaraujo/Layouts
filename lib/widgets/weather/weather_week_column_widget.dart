@@ -42,55 +42,52 @@ class WeatherWeekColumn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Column(
-        children: [
-          Text(
-            title,
-            style: TextStyle(
-              color: setTextColor(),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          title,
+          style: TextStyle(
+            color: setTextColor(),
+          ),
+        ),
+        Text(
+          date,
+          style: TextStyle(
+            color: setTextColor(true),
+            fontSize: 12,
+          ),
+        ),
+        Image.asset(
+          iconPath,
+          width: 40,
+          height: 40,
+        ),
+        Text(
+          celsiusDegree,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: setTextColor(),
+          ),
+        ),
+        Container(
+          margin: const EdgeInsets.only(top: 10),
+          padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 7),
+          decoration: BoxDecoration(
+            color: chooseBottomValueContainerColor(bottomValue),
+            borderRadius: const BorderRadius.all(
+              Radius.circular(5),
             ),
           ),
-          Text(
-            date,
-            style: TextStyle(
-              color: setTextColor(true),
-              fontSize: 12,
+          child: Text(
+            bottomValue.toString(),
+            style: const TextStyle(
+              color: Colors.white,
+              fontSize: 10,
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(top: 5.0),
-            child: Image.asset(
-              iconPath,
-              scale: 5,
-            ),
-          ),
-          Text(
-            celsiusDegree,
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              color: setTextColor(),
-            ),
-          ),
-          Container(
-            margin: const EdgeInsets.only(top: 10),
-            padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 7),
-            decoration: BoxDecoration(
-              color: chooseBottomValueContainerColor(bottomValue),
-              borderRadius: const BorderRadius.all(
-                Radius.circular(5),
-              ),
-            ),
-            child: Text(
-              bottomValue.toString(),
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 10,
-              ),
-            ),
-          ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

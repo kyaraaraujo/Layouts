@@ -25,22 +25,21 @@ class DetailsCardSectionWidget extends StatelessWidget {
 
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 18, vertical: 9),
-      elevation: 15,
+      elevation: 25,
       color: Colors.white,
-      shadowColor: Colors.black,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+      shadowColor: Colors.grey.shade200.withOpacity(0.8),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(35)),
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 8),
+            padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 22),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
                 Text(
                   "Details",
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
-                SizedBox(width: 150),
                 Icon(
                   Icons.refresh,
                   color: Colors.grey,
